@@ -23,4 +23,11 @@ int exit_shell(char *buffer);
 int print_env(char *buffer);
 int execute_command(char **command, char **argv, char **env);
 
+int _strlen(char *str);
+char *_strcpy(char *dest, char *src);
+char *_strcat(char *dest, char *src);
+int _strcmp(char *s1, char *s2);
+char *_strchr(char *s, char c);
+char *_strdup(char *str);
+
 #endif
