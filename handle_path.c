@@ -36,7 +36,7 @@ char *handle_path(char **command)
 		if (!counter)
 		{
 			full_path = malloc(_strlen(command[0]) + 1);
-			_strcpy(full_patth, command[0]);
+			_strcpy(full_path, command[0]);
 		}
 		free(temp), temp = NULL;
 	}
