@@ -10,6 +10,7 @@ char **tokenizer(char *buffer)
 {
 	char *token = NULL;
 	char **comd_tokens = NULL;
+	int i = 0;
 
 	if (buffer == NULL)
 		return (NULL);
@@ -26,7 +27,14 @@ char **tokenizer(char *buffer)
 	if (comd_tokens == NULL)
 	{
 		free(buffer);
-		buffer = strtok(NULL, " \t\n");
+		buffer = NULL;
+		return (NULL);
+	}
+
+	while (token)
+	{
+		comd_tokens[i] = _strdup(token);
+		token = strtok(NULL, " \t\n");
 		i++;
 	}
 	free(buffer), buffer = NULL;
