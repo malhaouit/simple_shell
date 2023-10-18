@@ -14,8 +14,8 @@ int print_env(char *buffer)
 	{
 		for (i = 0; environ[i]; i++)
 		{
-			writes(STDOUT_FILENO, environ[i], strlen(environ[i]));
-			writes(STDOUT_FILENO, "\n", 1)
+			write(STDOUT_FILENO, environ[i], strlen(environ[i]));
+			write(STDOUT_FILENO, "\n", 1);
 		}
 		free(buffer);
 		return (1);
