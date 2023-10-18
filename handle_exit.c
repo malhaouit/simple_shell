@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * exit_shell - Ends the custom shell
+ * exit_shell - Ends the custom shell.
  * @buffer: Buffer containing the command
  *
  * Return: 1 if buffer contains "exit" command, or -1 if not
