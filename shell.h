@@ -2,7 +2,7 @@
 #define SHELL_H
 
 #include <stdio.h>
-#include <stdlib.>
+#include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -11,7 +11,7 @@
 
 #define COMD_SIZE 1024
 
-extern char **enivron;
+extern char **environ;
 
 void display_prompt(char *prompt);
 ssize_t read_command_line(char **buffer, size_t *len, FILE *stream);
